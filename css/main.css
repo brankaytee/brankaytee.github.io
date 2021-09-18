@@ -1,0 +1,355 @@
+/* Headers */
+.name-title h1{
+  border: 0.25rem solid #70788a;
+  padding: 3rem;
+  text-align: center;
+}
+
+/* About Page */
+.page-label{
+  display: flex;
+  justify-content: center;
+}
+
+.page-label h3{
+  margin-right: 1rem;
+}
+
+.bio-wrapper{
+  display: flex;
+  justify-content:
+  center;
+  align-items: center;
+}
+
+.bio-wrapper .biography{
+  min-width: 20rem;
+}
+
+.my-name{
+  margin-top: 3rem;
+  text-align: center;
+}
+
+#about .biography
+{
+  max-width: 29%;
+}
+
+.programs{
+  margin-top: 5rem;
+  text-align: center;
+}
+
+.program-labels {
+  display: flex;
+  justify-content: space-around;
+  max-width: 75rem;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+/* End of about page */
+/* Project Page */
+#model-projects{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  /* margin: 0rem 10rem 0rem 10rem; */
+  /* grid-gap: 5rem; */
+}
+
+
+
+/* .project-grid .grid-item {
+  position: relative;
+} */
+.grid-item img{
+  max-width: 59rem;
+  /* max-width: 55rem; */
+  /* max-height: 40rem; */
+  object-fit: cover;
+}
+#graphics{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-end;
+}
+#graphics .grid-item:nth-child(1) img{
+  max-width: 45rem;
+}
+#graphics .grid-item:nth-child(2) img{
+  max-width: 29rem;
+}
+#graphics .grid-item:nth-child(3) img{
+  max-width: 24rem;
+}
+
+
+.clickable:hover img{
+  /* opacity: 0.75; */
+  filter: brightness(70%);
+}
+
+/* overlay */
+/* .overlay-one{
+  opacity: 1;
+  transition: 0.2s ease-out;
+}
+
+.overlay-one:hover{
+  opacity: 1;
+  transition: 0.3s ease;
+} */
+
+/* .overlay-two{
+  position: absolute;
+  opacity: 1;
+  top: 0;
+  bottom: -160px;
+  right: 0;
+  left: -26px;
+  transition: 0.2s ease-out;
+} */
+
+/* .overlay-two:hover{
+  opacity: 1;
+  transition: 0.3s ease;
+} */
+
+/* Overview Project Page ends here */
+/* project descriptions */
+.project-detail{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.project-detail .write-up{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-detail .write-up{
+  max-width: 50rem;
+}
+
+.project-detail h2{
+  margin-top: 7rem;
+}
+
+.project-detail .finished-project img {
+  width: 50rem;
+}
+
+.project-detail .process-wrapper{
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  width: 75%;
+}
+
+.project-detail .programs{
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+.project-detail .process-wrapper .process-img{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.project-detail .process-wrapper img{
+  max-width: 20rem;
+}
+
+.project-detail .process-wrapper p{
+  text-align: center;
+  max-width: 20rem;
+}
+
+.project-detail .process-wrapper i{
+  color: #b2b6bf;
+  align-content: center;
+}
+
+.project-buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 10rem;
+  margin-bottom: 6rem;
+  margin-top: 15rem;
+  align-items: center;
+}
+
+/* .project-buttons i{ color: #b2b6bf; font-size: 3rem; } */
+.project-buttons .left-button{
+/* margin-right: 2rem; */
+}
+
+.project-buttons .right-button{
+ /* margin-left: 2rem; */
+}
+
+#project3 .finished-project-first{
+  margin-bottom: 2rem;
+}
+
+#project3 .finished-project-first img{
+  max-width: 50rem;
+}
+
+#project3 .finished-project-second img{
+  max-width: 50rem;
+}
+
+/* contact page */
+#contact{
+  display: flex;
+  justify-content: space-around;
+}
+
+#contact .contact-wrapper{
+  min-width: 30rem;
+  text-align: center;
+  justify-content: space-around;
+}
+
+#contact .contact-wrapper i{
+  color: #b2b6bf;
+}
+
+#contact .contact-wrapper .email-wrapper{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#contact .contact-wrapper .email-wrapper i{
+  margin-right: 0.5rem;
+}
+
+/* flexibility */
+
+/* 1920x1080p */
+@media only screen and (max-width: 1920px){
+
+  /* headers */
+  h1{
+    font-size: 3.5rem;
+  }
+  h2{
+    font-size: 2rem;
+  }
+  /* graphic design section */
+  #graphics .grid-item:nth-child(1) img{
+    max-width: 26rem;
+  }
+  #graphics .grid-item:nth-child(2) img{
+    max-width: 18rem;
+  }
+  #graphics .grid-item:nth-child(3) img{
+    max-width: 14rem;
+  }
+
+  /* 3D model Section */
+  .grid-item img{
+    max-width: 39rem;
+  }
+}
+
+/* mobile */
+@media only screen and (max-width: 1000px) { /* banner */
+  h1{
+    font-size: 2.5rem;
+  }
+  h2{
+    font-size: 2rem;
+  }
+  /* project description */
+  .project-buttons{
+    flex-direction: column;
+  }
+  .project-buttons .left-button{
+    margin-bottom: 6rem;
+  }
+  .process-img {
+    margin-top: 5rem;
+  }
+  .project-detail .process-wrapper p{
+    max-width: 20rem;
+  }
+  .project-buttons{
+    margin-top: 7rem;
+  }
+  /* about page */
+  .programs{
+    margin-top: 5rem;
+  }
+  .progam-labels{
+    flex-direction: column;
+  }
+  .program-labels p{
+    flex-basis: 100%;
+    text-align: center;
+  }
+  .project-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+  /* .grid-item .project-image{
+    max-width: 30rem;
+  } */
+  #graphic-title{
+    padding-bottom: 0rem;
+  }
+  /* .overlay-one{
+    display: none;
+  } */
+  /* Finished Project Images */
+  .project-detail .finished-project img{
+    max-width: 23rem;
+  }
+  /* business card finished detailed images */
+  #project3 .finished-project-first img{
+    max-width: 25rem;
+  }
+  #project3 .finished-project-second img{
+    max-width: 25rem;
+    }
+  /* 3D model Section */
+  .project-grid .grid-item img{
+    max-width: 25rem;
+    margin-top: 1rem;
+  }
+
+  /* Graphic Design page */
+  /* .project-grid .grid-item img{
+    max-width: 29rem;
+    margin-top: 5rem;
+  } */
+  #graphics{
+    align-items: center;
+  }
+  #graphics .grid-item:nth-child(1) img{
+    max-width: 23rem;
+  }
+  #graphics .grid-item:nth-child(2) img{
+    max-width: 23rem;
+  }
+  #graphics .grid-item:nth-child(3) img{
+    max-width: 23rem;
+  }
+
+  /* contact */
+  #contact .contact-wrapper{
+      align-items: center;
+      justify-content: space-around;
+    }
+}

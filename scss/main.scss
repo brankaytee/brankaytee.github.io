@@ -1,0 +1,290 @@
+/* Headers */
+.name-title h1{
+  border: 0.25rem solid #70788a;
+  padding: 3rem;
+  text-align: center;
+}
+/* About Page */
+.page-label{
+  display: flex;
+  justify-content: center;
+}
+  .page-label h3{
+    margin-right: 1rem;
+  }
+.bio-wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+  .bio-wrapper .biography{
+    min-width: 20rem;
+  }
+.my-name{
+  margin-top: 3rem;
+  text-align: center;
+}
+#about .biography{
+  max-width: 25%;
+}
+.programs{
+  margin-top: 10rem;
+  text-align: center;
+}
+.program-labels{
+  margin-top: 5rem;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  /* margin-right: 30rem;
+  margin-left: 30rem; */
+}
+  .program-labels p{
+
+  }
+/* End of about page */
+
+/* Project Page */
+.project-grid{
+  display: flex;
+  /* grid-template-columns: auto auto; */
+  justify-content: space-around;
+  margin: 0rem 10rem 0rem 10rem;
+  grid-gap: 5rem;
+}
+  .project-grid .grid-item{
+    /* padding: 15rem 23rem 15rem 23rem; */
+    /* background-color: grey; */
+    /* border: 1px solid black; */
+    margin: 0rem;
+  }
+    .project-grid .grid-item .project-image{
+      /* position: relative; */
+      width: 46em;
+    }
+    .project-grid .grid-item img{
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      position: relative;
+    }
+      .project-grid .grid-item img:hover{
+        opacity: 0.2;
+      }
+      .project-grid .grid-item:hover .overlay-one{
+        opacity: 1;
+      }
+      .project-grid .grid-item:hover .overlay-two{
+        opacity: 1;
+      }
+      .project-grid .grid-item:hover .overlay-three{
+        opacity: 1;
+      }
+      /* hover for text on overlay to affect image transparency */
+      .project-grid .grid-item:hover img{
+        opacity: 0.2;
+      }
+
+/* overlay */
+.overlay-one{
+  position: absolute;
+  top: 48rem;
+  left: 13rem;
+  opacity: 0;
+}
+  .overlay-one:hover{
+    opacity: 1;
+  }
+.overlay-two{
+  position: absolute;
+  top: 48rem;
+  left: 65rem;
+  opacity: 0;
+}
+  .overlay-two:hover{
+    opacity: 1;
+  }
+.overlay-three{
+  position: absolute;
+  top: 108rem;
+  left: 39rem;
+  opacity: 0;
+}
+  .overlay-three:hover{
+    opacity: 1;
+  }
+/* Overview Project Page ends here */
+
+/* project descriptions */
+.project-detail{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+  .project-detail .write-up{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+    .project-detail .write-up{
+      max-width: 70rem;
+    }
+  .project-detail h2{
+    margin-top: 7rem;
+  }
+  .project-detail .finished-project img{
+    max-width: 75rem;
+  }
+.project-detail .process-wrapper{
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  width: 100%;
+}
+  .project-detail .programs{
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+  }
+  .project-detail .process-wrapper .process-img{
+    /* margin-right: 1rem;
+    margin-left: 1rem; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+  }
+    .project-detail .process-wrapper img{
+      max-width: 20rem;
+      /* height: cover;
+      object-fit: cover; */
+    }
+    .project-detail .process-wrapper p{
+      text-align: center;
+      max-width: 20rem;
+    }
+    .project-detail .process-wrapper i{
+      color: #b2b6bf;
+      align-content: center;
+    }
+ .project-buttons{
+   display: flex;
+   justify-content: center;
+   margin-top: 10rem;
+   /* margin-left: 3rem;
+   margin-right: 3rem; */
+   /* width: 100%; */
+   margin-bottom: 6rem;
+   margin-top: 15rem;
+   align-items: center;
+ }
+  /* .project-buttons i{
+    color: #b2b6bf;
+    font-size: 3rem;
+  } */
+  .project-buttons .left-button{
+    /* margin-right: 2rem; */
+  }
+  .project-buttons .right-button{
+    /* margin-left: 2rem; */
+  }
+ #project3 .finished-project-first{
+   margin-bottom: 2rem;
+ }
+   #project3 .finished-project-first img{
+     max-width: 60rem;
+   }
+   #project3 .finished-project-second img{
+     max-width: 60rem;
+   }
+/* contact page */
+#contact{
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+  #contact .contact-wrapper{
+    min-width: 30rem;
+    text-align: center;
+  }
+  #contact .contact-wrapper i{
+    color: #b2b6bf;
+  }
+  #contact .contact-wrapper .email-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #contact .contact-wrapper .email-wrapper i{
+    margin-right: 0.5rem;
+  }
+
+/* flexibility */
+@media only screen and (max-width: 1000px) {
+  /* banner */
+  h1{
+    font-size: 3rem;
+  }
+  h2{
+    font-size: 2.5rem;
+  }
+  /* project description */
+  .project-buttons{
+    flex-direction: column;
+  }
+  .project-buttons .left-button{
+    margin-bottom: 6rem;
+  }
+  .process-img{
+    margin-top: 5rem;
+  }
+  .project-detail .process-wrapper p{
+    max-width: 20rem;
+  }
+  .project-buttons{
+    margin-top: 7rem;
+  }
+  /* about page */
+  .programs{
+    margin-top: 5rem;
+  }
+  .progam-labels{
+    flex-direction: column;
+    /* margin-left: 0;
+    margin-right: 0; */
+    align-items: center;
+  }
+  .program-labels p{
+    flex-basis: 100%;
+    text-align: center;
+  }
+  .project-grid{
+    flex-direction: column;
+    align-items: center;
+  }
+    .grid-item .project-image{
+      max-width: 30rem;
+    }
+  #graphic-title{
+    padding-bottom: 0rem;
+  }
+  .overlay-one{
+    display: none;
+  }
+  .overlay-two{
+    display: none;
+  }
+  .overlay-three{
+    display: none;
+  }
+  .project-detail .finished-project img{
+    max-width: 30rem;
+  }
+  #project3 .finished-project-first img{
+    max-width: 25rem;
+  }
+  #project3 .finished-project-second img{
+    max-width: 25rem;
+  }
+}
