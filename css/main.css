@@ -131,10 +131,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-
-.project-detail .write-up{
   max-width: 50rem;
+  padding-bottom: 5rem;
 }
 
 .project-detail h2{
@@ -142,6 +140,10 @@
 }
 
 .project-detail .finished-project img {
+  width: 50rem;
+}
+
+.project-detail .live-application img{
   width: 50rem;
 }
 
