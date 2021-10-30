@@ -318,6 +318,9 @@
   .project-detail .finished-project img{
     max-width: 23rem;
   }
+  .project-detail .live-application img{
+    max-width: 23rem;
+  }
   /* business card finished detailed images */
   #project3 .finished-project-first img{
     max-width: 25rem;
