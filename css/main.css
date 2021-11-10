@@ -131,7 +131,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  max-width: 50rem;
+  max-width: 80rem;
   padding-bottom: 5rem;
 }
 
@@ -140,11 +140,11 @@
 }
 
 .project-detail .finished-project img {
-  width: 50rem;
+  width: 80rem;
 }
 
 .project-detail .live-application img{
-  width: 50rem;
+  width: 80rem;
 }
 
 .project-detail .process-wrapper{
@@ -204,11 +204,11 @@
 }
 
 #project3 .finished-project-first img{
-  max-width: 50rem;
+  max-width: 80rem;
 }
 
 #project3 .finished-project-second img{
-  max-width: 50rem;
+  max-width: 80rem;
 }
 
 /* contact page */
